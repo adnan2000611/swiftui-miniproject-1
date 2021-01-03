@@ -14,6 +14,7 @@
 		044A5BB125A0C65200A59C5B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044A5BB025A0C65200A59C5B /* ContentView.swift */; };
 		044A5BB325A0C65500A59C5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044A5BB225A0C65500A59C5B /* Assets.xcassets */; };
 		044A5BB625A0C65500A59C5B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 044A5BB525A0C65500A59C5B /* Preview Assets.xcassets */; };
+		04C4CAA825A1F3030048E66D /* Details.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4CAA725A1F3030048E66D /* Details.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		044A5BB225A0C65500A59C5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		044A5BB525A0C65500A59C5B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		044A5BB725A0C65500A59C5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04C4CAA725A1F3030048E66D /* Details.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Details.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,10 +69,11 @@
 		044A5BAD25A0C65200A59C5B /* project */ = {
 			isa = PBXGroup;
 			children = (
+				04C4CAAA25A1F33A0048E66D /* Views */,
 				041AE9C825A11E450063C6A3 /* Models */,
 				044A5BAE25A0C65200A59C5B /* projectApp.swift */,
+				04C4CAA725A1F3030048E66D /* Details.swift */,
 				044A5BB025A0C65200A59C5B /* ContentView.swift */,
-				041AE9D325A127980063C6A3 /* BillView.swift */,
 				044A5BB225A0C65500A59C5B /* Assets.xcassets */,
 				044A5BB725A0C65500A59C5B /* Info.plist */,
 				044A5BB425A0C65500A59C5B /* Preview Content */,
@@ -84,6 +87,14 @@
 				044A5BB525A0C65500A59C5B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		04C4CAAA25A1F33A0048E66D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				041AE9D325A127980063C6A3 /* BillView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +168,7 @@
 			files = (
 				041AE9D425A127980063C6A3 /* BillView.swift in Sources */,
 				044A5BB125A0C65200A59C5B /* ContentView.swift in Sources */,
+				04C4CAA825A1F3030048E66D /* Details.swift in Sources */,
 				041AE9CA25A11E930063C6A3 /* Bill.swift in Sources */,
 				041AE9CF25A120AB0063C6A3 /* cycle.swift in Sources */,
 				044A5BAF25A0C65200A59C5B /* projectApp.swift in Sources */,
