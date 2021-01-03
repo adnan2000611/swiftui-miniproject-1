@@ -28,7 +28,7 @@ struct ContentView: View {
                     NavigationLink(
                         destination: Deatiels(picture: cycle.image, price: cycle.price),
                         label: {
-                            cycleRow(CycleImage: cycle.image, numberOfRow: cycles.count)
+                            cycleRow(CycleImage: cycle.image, numberOfRow: cycle.number)
                         })
                     
                     
@@ -44,7 +44,11 @@ struct ContentView: View {
 struct cycleRow : View{
     let CycleImage : String
     let numberOfRow : Int
+    
+    
     var body: some View{
+        
+        
         HStack{
             Text("\(numberOfRow)").padding().background(Color(#colorLiteral(red: 0.198762387, green: 0.6742743254, blue: 0.8931196332, alpha: 1))).clipShape(Circle()).foregroundColor(.white)
             Image(CycleImage)
@@ -52,8 +56,10 @@ struct cycleRow : View{
                 .scaledToFit()
                 .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
         }
+        
     }
 }
+
 
 struct Deatiels : View{
     
@@ -77,6 +83,7 @@ struct Deatiels : View{
             HStack{
                 
                 Stepper("عدد الساعات \(Hour)", value: $Hour)
+                    
                
                 //Text("عدد الساعات \(Hour)")
                 
@@ -133,4 +140,4 @@ struct ContentView_Previews: PreviewProvider {
 //شلون اطلع الارقام
 // شلون اشيل المسافه بين list و text
 // شلون اعكس steper
-//شلون احط اسم الفاتوره فوق
+

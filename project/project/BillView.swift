@@ -40,7 +40,7 @@ struct BillView : View {
                 Thecolor = .green
                 theText = "تم الدفع"
             }
-        }.padding()
+        }.padding().navigationTitle("الفاتورة")
     }
 }
 
